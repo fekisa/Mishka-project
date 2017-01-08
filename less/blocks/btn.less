@@ -1,0 +1,87 @@
+.btn {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 17px;
+  line-height: 16px;
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #444444;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
+
+  &--green {
+    background-color: #63d1bb;
+    color: #ffffff;
+    border: none;
+  }
+}
+
+.btn__contacts {
+  display: inline-block;
+  width: 100%;
+  transform: translateY(497px);
+}
+
+.btn__order-form {
+  background-color: #fff;
+}
+
+@media @tablet-widths {
+
+  .btn__reviews {
+    width: 178px;
+    position: absolute;
+    top: 79px;
+    right: 0;
+  }
+
+  .btn__order-form {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 235px;
+  }
+
+  .btn__contacts {
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+  }
+}
+
+@media @desktop-widths {
+  .btn__contacts {
+    transform: none;
+    margin: 0;
+    position: static;
+    margin: 0;
+    width: 230px;
+  }
+
+  .btn__order-form {
+    margin-left: 170px;
+  }
+
+
+  .btn__reviews {
+    top: 86px;
+  }
+
+  .btn__production-card {
+    margin-top: 12px;
+    margin-left: 30px;
+    width: 230px;
+  }
+}

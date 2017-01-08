@@ -1,0 +1,117 @@
+.production-card {
+  font-family: "Open Sans", "Helvetica",sans-serif;
+  position: relative;
+  padding-top: 25px;
+  border: 1px solid #ececec;
+}
+
+.production-card:hover .production-card__container {
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+.production-card:active .production-card__container {
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.production-card__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 800;
+  padding-left: 90px;
+  width: 130px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.production-card__video-container {
+  position: relative;
+}
+
+.production-card__video-container img{
+  display: block;
+}
+
+.production-card__container {
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 27px;
+  padding-bottom: 33px;
+}
+
+.production-card__description {
+  padding-bottom: 25px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+@media @tablet-widths {
+  .production-card {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    padding-top: 0;
+    border: none;
+  }
+
+  .production-card__title {
+    position: absolute;
+    bottom: 200px;
+    width: 260px;
+    left: 105px;
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .production-card__container {
+    border: 1px solid #ececec;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 95px;
+    padding-bottom: 45px;
+  }
+
+  .production-card__description {
+    font-size: 15px;
+    line-height: 30px;
+    padding-bottom: 35px;
+  }
+}
+
+@media @desktop-widths {
+  .production-card {
+    padding: 0;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .production-card__title {
+    width: 155px;
+    bottom: 285px;
+    left: 760px;
+  }
+
+  .production-card__video-container {
+    width: 680px;
+  }
+
+  .production-card__container {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 454px;
+    width: 369px;
+    padding: 0;
+    border-left: none;
+  }
+
+  .production-card__description {
+    margin-top: 178px;
+    padding-left: 22px;
+    width: 250px;
+  }
+}

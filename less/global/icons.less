@@ -1,0 +1,101 @@
+.search-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 35px;
+  left: 31px;
+  background-repeat: no-repeat;
+  fill: #d3d2d2;
+}
+
+.icon-cart {
+  width: 25px;
+  height: 19px;
+  position: absolute;
+  top: 35px;
+  left: 26px;
+  background-repeat: no-repeat;
+  fill: #d3d2d2;
+}
+
+.icon-menu-closed {
+  display: none;
+}
+
+.icon-menu-opened {
+  display: none;
+}
+
+.interior-icon {
+  height: 60px;
+  fill: #149080;
+  opacity: 0.5;
+}
+
+.toy-icon {
+  fill: #149080;
+  opacity: 0.5;
+}
+
+.promo__item:active .toy-icon,
+.promo__item:active .interior-icon {
+  opacity: 0.3;
+}
+
+.icon-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  &:hover {
+    transform-origin: left;
+    transform: scale(1.2) translate(-50%, -50%);
+  }
+
+  &:active {
+    transform: scale(0.8) translate(-50%, -50%);
+    opacity: 0.4;
+  }
+}
+
+.icon-phone {
+  position: absolute;
+  right: 5px;
+  bottom: 15px;
+  opacity: 0.2;
+}
+
+.icon-mail {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  opacity: 0.2;
+}
+
+
+.icon-camera {
+  position: absolute;
+  fill: #63d1bb;
+  left: 32px;
+  top: 30px;
+}
+
+.icon-checkbox-checked {
+  display: none;
+}
+
+@media @tablet-widths {
+  .icon-camera {
+    left: 40px;
+    top: 487px;
+  }
+}
+
+@media @desktop-widths {
+  .icon-camera {
+    top: 42px;
+    left: 763px;
+  }
+}

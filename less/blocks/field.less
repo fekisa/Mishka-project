@@ -1,0 +1,70 @@
+.field {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 17px;
+  outline: none;
+  background-color: transparent;
+  color: #444444;
+
+  &--area {
+    width: 100%;
+    height: 140px;
+    margin-top: 12px;
+    padding-left: 10px;
+    border: 2px solid #000000;
+
+    &:hover + .icon-phone{
+      border: 2px solid #62d1ba;
+    }
+
+    &:focus {
+      border: 2px solid #62d1ba;
+    }
+  }
+
+  &--text {
+    width: 100%;
+    box-shadow: 0px 2px 0px #000000;
+    padding-bottom: 15px;
+
+    &:hover {
+      box-shadow: 0px 2px 0px #62d1ba;
+    }
+
+    &:focus {
+      box-shadow: 0px 2px 0px #62d1ba;
+    }
+  }
+}
+
+.field--text:hover + svg,
+.field--text:focus + svg {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
+@media @tablet-widths {
+  .field {
+    font-size: 19px;
+
+    &--area {
+      padding-left: 20px;
+    }
+
+    &--text {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .field {
+
+    &--area {
+      margin-top: 0px;
+    }
+  }
+}

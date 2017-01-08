@@ -1,0 +1,27 @@
+.product-cards {
+  margin-top: 30px;
+}
+
+.product-cards__container {
+  .container();
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+@media @tablet-widths {
+  .product-cards {
+    margin-top: 79px;
+  }
+}
+
+@media @desktop-widths {
+  .product-cards {
+    margin-top: 129px;
+  }
+
+  .product-cards__container {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}

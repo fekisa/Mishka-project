@@ -1,0 +1,23 @@
+.container() {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media @tablet-widths {
+    padding: 0;
+    max-width: 668px;
+  }
+
+  @media @desktop-widths {
+    max-width: 1050px;
+  }
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}

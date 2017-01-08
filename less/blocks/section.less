@@ -1,0 +1,47 @@
+.section {
+  position: relative;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  height: 177px;
+}
+
+.section__title {
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+@media @tablet-widths {
+  .section {
+    height: 226px;
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 26px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+  }
+
+  .section__title {
+    font-size: 43px;
+  }
+}
+
+@media @desktop-widths {
+  .section {
+    height: 254px;
+  }
+
+  .section__title {
+    font-size: 53px;
+  }
+}
